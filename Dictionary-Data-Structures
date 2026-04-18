@@ -1,0 +1,9 @@
+
+intro={"Name": "Elo", "Age": "7", "Favourite Food": "Pasta"}
+print(intro)
+print(intro["Age"])
+print(intro["Favourite Food"])
+intro["City"]="Toronto"
+print(intro)
+intro.pop("Age")
+print(intro)
