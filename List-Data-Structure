@@ -1,0 +1,15 @@
+
+food=["pasta", "steak", "fries", "waffles"]
+print(food)
+print("First Item:", food[0], "Last Item:", food[3])
+food.reverse()
+print("Reverse List:", food)
+food.sort()
+print("Sorted List:", food)
+food.append("rice")
+print("New Item Added To List:", food)
+food.remove("waffles")
+print("Item Removes From List:", food)
+print("Length Of The List:", len(food))
+food.clear()
+print("Evertything Is Deleted:", food)
