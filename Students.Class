@@ -1,0 +1,12 @@
+
+class Student:
+    grade=9
+    name=("Elo")
+    def introduction(self):
+        print("HI! I am a student")
+    def details(self):
+        print("My name is", self.name)
+        print("I am in grade:", self.grade)
+school=Student()
+school.introduction()
+school.details()
