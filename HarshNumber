@@ -1,0 +1,61 @@
+
+print("These Are Your Random Numbers:")
+num=[35, 67, 99, 5, 45, 12]
+print(num)
+first_letter=int(input("Enter The First Number Of Your Chosen Number (Don't Give it Away;): "))
+print("Once The Judge Has The Number They Have Picked In Their Head, Harsh May Begin Guessing")
+Harsh_number=int(input("Enter First Guess: "))
+if first_letter==3:
+    if Harsh_number>35:
+        if Harsh_number>35:
+            print("Guess Lower!")
+            Harsh_number=int(input("Enter Guess: "))
+        if Harsh_number==35:
+                print("Correct! Good Job")
+    elif Harsh_number<35:
+        print("Guess Higher!")
+    elif Harsh_number==35:
+        print("Correct! Good Job!")
+if first_letter==6:
+    if Harsh_number>67:
+        print("Guess Lower!")
+    elif Harsh_number<67:
+        print("Guess Higher!")
+    elif Harsh_number==67:
+        print("Correct! Good Job!")
+if first_letter==9:
+    if Harsh_number>99:
+        print("Guess Lower!")
+    elif Harsh_number<99:
+        print("Guess Higher!")
+    elif Harsh_number==99:
+        print("Correct! Good Job!")
+if first_letter==5:
+    if Harsh_number>5:
+        print("Guess Lower!")
+    elif Harsh_number<5:
+        print("Guess Higher!")
+    elif Harsh_number==5:
+        print("Correct! Good Job!")
+if first_letter==4:
+    if Harsh_number>45:
+        print("Guess Lower!")
+    elif Harsh_number<45:
+        print("Guess Higher!")
+    elif Harsh_number==45:
+        print("Correct! Good Job!")
+if first_letter==1:
+    if Harsh_number>12:
+        print("Guess Lower!")
+    elif Harsh_number<12:
+        print("Guess Higher!")
+    elif Harsh_number==12:
+        print("Correct! Good Job!")
+if Harsh_number != 1 or 4 or 5 or 9 or 6 or 3:
+    print("Guess Again!")
+
+
+
+
+
+
