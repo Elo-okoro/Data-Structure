@@ -1,0 +1,6 @@
+personalinfo=("Elo", "Okoro", "14", "135 lbs" "5 foot 2 inches", "Math")
+print(personalinfo)
+personalinfolist=list(personalinfo)
+print(personalinfolist)
+personalinfolist.append("I Like To Eat Pasta")
+print(personalinfolist)
