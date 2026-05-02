@@ -1,0 +1,26 @@
+
+class Tom:
+    robot=("I am a robot")
+    name=("Tom")
+    def introduction(self):
+        print("HI! I am Tom")
+    def details(self):
+        print("My name is", self.name)
+        print( self.robot)
+school=Tom()
+school.introduction()
+school.details()
+
+class Jerry:
+    robot=("I am a robot")
+    name=("Jerry")
+    def introduction(self):
+        print("HI! I am Jerry")
+    def details(self):
+        print("My name is", self.name)
+        print( self.robot)
+school=Jerry()
+school.introduction()
+school.details()
+
+
