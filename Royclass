@@ -1,0 +1,11 @@
+
+file1 = open("Royclass.txt", "r") 
+open("Royclass.txt", "w")
+file1.write("This is Roy class")
+print(file1.read())
+file1.close()
+
+file1 = open("Royclass.txt", "r")
+file1 = open("Royclass", "a")
+print(file1.read(8))
+file1.close()
