@@ -1,0 +1,15 @@
+class Hexagon:
+    def __init__(self,side):
+        self.side=side
+    def perimeter(self):
+        print("Hexagon perimeter is:", 6*self.side)
+class Octagon:
+    def __init__(self,side):
+        self.side=side
+    def perimeter(self):
+        print("Octagon perimeter is:", 8*self.side)
+
+octagon1 = Octagon(3)
+hexagon1 = Hexagon(7)
+print("Octagon:", octagon1.perimeter())
+print("Hexagon:", hexagon1.perimeter())
