@@ -1,0 +1,11 @@
+
+with open("RandomFile.txt", "w") as randomfile:
+    randomfile.write("Hello and Welcome")
+randomfile.close()
+with open ("RandomFilel.txt", "r") as file:
+    data = randomfile.readlines()
+    print("Wordrs in this file are...")
+    for line in data:
+        word=line.split()
+        print(word)
+randomfile.close()
