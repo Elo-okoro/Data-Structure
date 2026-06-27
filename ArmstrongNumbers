@@ -1,0 +1,16 @@
+
+user_number=int(input("Please Enter Your Number: "))
+num_of_digits=len(str(user_number))
+user_number1 = user_number
+number=0
+#modules (#) means giving the remainder so 7%2 is 1
+#** means power to
+#//= means floor division, it gives you only the whole number, no decimal
+while user_number1>0:
+    digit = user_number1%10
+    number+=digit**num_of_digits
+    user_number1//=10
+if user_number==number:
+    print("It is an Armstrong Number")
+else:
+    print("This is not an Armstrong Number")
