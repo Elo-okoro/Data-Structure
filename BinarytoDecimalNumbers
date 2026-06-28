@@ -1,0 +1,22 @@
+rhp_newlist=[]
+lhp_newlist=[]
+user_input = input("Enter Number: ")
+if "." in user_input:
+    digits = user_input.split(".")
+    right_hand_int = [int(i) for i in str(digits[1])]
+    left_hand_int = [int(i) for i in str(digits[0])]
+    left_hand_int.reverse()
+    for index, item in enumerate(left_hand_int):
+        lhp_newlist.append(item*2**index)
+    lhp = sum(lhp_newlist)
+    for index, item in enumerate(right_hand_int):
+        rhp_newlist.append(item*2**(-(index+1)))
+    rhp = sum(rhp_newlist)
+    print(rhp+lhp)
+if "." not in user_input:
+    left_hand_int = [int(i) for i in str(user_input)]
+    left_hand_int.reverse()
+    for index, item in enumerate(left_hand_int):
+        lhp_newlist.append(item*2**index)
+    lhp = sum(lhp_newlist)
+    print(lhp)
