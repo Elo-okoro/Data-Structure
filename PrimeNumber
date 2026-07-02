@@ -1,0 +1,11 @@
+from math import sqrt
+user_number=int(input("Enter Your Number: \n"))
+if user_number>1:
+    for i in range(2, int(sqrt(user_number))+1):
+        if (user_number%i)==0:
+            print(user_number," is not a prime nummber")
+            break
+    else:
+        print(user_number, "is a prime number")
+else:
+    print(user_number, "is not a prime number")
