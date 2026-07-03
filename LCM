@@ -1,0 +1,10 @@
+small_number=int(input("Enter The Smaller Number: "))
+bigger_number=int(input("Enter The Bigger Number: "))
+while small_number and bigger_number >=0:
+    if (bigger_number%small_number)==0:
+        print("The Lowest Common Multiple Is: ",bigger_number)
+        break
+    else:
+        lcm=bigger_number*small_number
+        print("The Lowest Common Multiple Is: ",lcm)
+        break
