@@ -1,0 +1,53 @@
+items = ["A", "B", "C"]
+total_subsets = 2 ** len(items)
+print("These Is A Set Called items:", items)
+print("This Is The Number Of Subsets in items:", total_subsets)
+mask = 0
+while mask<total_subsets:
+    bit2 = (mask>>2)&1
+    bit1 = (mask>>1)&1
+    bit0 = mask&1
+    print("Mask", mask, "~> [C][B][A] = ",bit2, bit1, bit0)
+    mask += 1
+
+sample_mask = 5
+j = 0
+while j<len(items):
+    probe = 1<<j
+    if sample_mask & probe:
+        print("Bit", j, "is 1, so item", items[j], "is selected")
+    else:
+        print("Bit", j," is 0, so item", items[j], "is not selected")
+    j += 1
+
+mask = 0
+while mask<total_subsets:
+    subset=[]
+
+    j = 0
+    while j<len(items):
+        probe = 1<<j
+
+        if mask&probe:
+            subset.append(items[j])
+        j += 1
+    print("Mask", mask, "~>", subset)
+    mask+=1
+
+def bit_difference(a,b):
+    difference_count = 0
+
+    while a>0 or b>0:
+        last_bit_a = a&1
+        last_bit_b  = b&1
+
+        if last_bit_a != last_bit_b:
+            difference_count += 1
+        a = a>>1
+        b = b>>1
+        return difference_count
+
+print("Difference between 12 and 15:", bit_difference(12, 15))
+print("The Binary of \n 12:", bin(12),"\n 15:", bin(15))
+print("Difference between 21 and 24:", bit_difference(21, 24))
+print("The Binary of \n 21:", bin(21),"\n 24:", bin(24))
